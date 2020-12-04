@@ -69,10 +69,10 @@
             <div class="row inner-menu-box">
                 <nav class="col-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" href="#v-pills-home" role="tab" aria-selected="true">All</a>
-                        <a class="nav-link" id="v-pills-profile-tab" href="#v-pills-profile" role="tab" aria-selected="false">Drinks</a>
-                        <a class="nav-link" id="v-pills-messages-tab" href="#v-pills-messages" role="tab" aria-selected="false">Lunch</a>
-                        <a class="nav-link" id="v-pills-settings-tab" href="#v-pills-settings" role="tab" aria-selected="false">Dinner</a>
+                        <a class="nav-link active" id="v-pills-home-tab" href="#v-pills-home" role="tab" onclick="toogle_visibility('#v-pills-home-tab','#v-pills-home')">All</a>
+                        <a class="nav-link" id="v-pills-profile-tab" href="#v-pills-profile" role="tab" onclick="toogle_visibility('#v-pills-profile-tab','#v-pills-profile')">Drinks</a>
+                        <a class="nav-link" id="v-pills-messages-tab" href="#v-pills-messages" role="tab" onclick="toogle_visibility('#v-pills-messages-tab','#v-pills-messages')">Lunch</a>
+                        <a class="nav-link" id="v-pills-settings-tab" href="#v-pills-settings" role="tab" onclick="toogle_visibility('#v-pills-settings-tab','#v-pills-settings')">Dinner</a>
                     </div>
                 </nav>
                 <div class="col-9">
@@ -180,6 +180,119 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+
+                                <div class="large-4 medium-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-01.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Drinks 1</h4>
+                                            <p>Monkey Gland.</p>
+                                            <h5> $7.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-02.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Drinks 2</h4>
+                                            <p>Watermelon Mojitos.</p>
+                                            <h5> $9.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-03.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Drinks 3</h4>
+                                            <p>Pineapple, Mango, And Basil Sangria.</p>
+                                            <h5> $10.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="row">
+                                <div class="large-4 medium-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-04.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Lunch 1</h4>
+                                            <p>Pimento Bacon Burger - Cobblestone Bread co.</p>
+                                            <h5> $15.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-05.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Lunch 2</h4>
+                                            <p>Baby Kale, Butternut, and Chicken Salad.</p>
+                                            <h5> $18.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-06.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Lunch 3</h4>
+                                            <p>Tuna, Avocado, and Pickled Onion Sandwich.</p>
+                                            <h5> $20.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="row">
+                                <div class="large-4 medium-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-07.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Dinner 1</h4>
+                                            <p>Multigrain Waffle-Sandwich With Veggie Chocolate Cheese.</p>
+                                            <h5> $25.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-08.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Dinner 2</h4>
+                                            <p>Rice Baby Kale with Paneer Butter Masala.</p>
+                                            <h5> $22.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="large-4 medium-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-09.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Special Dinner 3</h4>
+                                            <p>Emily Hlavac Green.</p>
+                                            <h5> $24.79</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,7 +305,7 @@
     <footer class="footer-area bg-f">
 
         <div class="row footer-inner">
-            <div class="about" style="width: 20%;">
+            <div class="about">
                 <h3>About Us</h3>
                 <p>VCook is the leading food ordering and delivery platform in India. The innovative technology, large and nimble delivery service, and exceptional consumer focus including lightning fast deliveries.</p>
 
@@ -201,7 +314,7 @@
                 <h3>Subscribe</h3>
                 <div class="subscribe_form">
                     <form class="subscribe_form">
-                        <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                        <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email" required>
                         <button type="submit" class="submit">SUBSCRIBE</button>
                         <div class="clearfix"></div>
                     </form>
@@ -241,6 +354,8 @@
 
     </footer>
     <!-- End Footer -->
+
+    <script src="js/kuldip-main.js"></script>
 
 </body>
 
