@@ -66,42 +66,82 @@
     <!-- Start Customer Reviews -->
     <main class="client_section layout_padding">
         <div class="container">
-            <div class="row">
-                <div class="medium-12">
-                    <h1 class="about_taital">What customers says</h1>
-                    <div class="bulit_icon"><img src="images/bulit-icon.png" alt="line_logo"></div>
+            <div id="Review">
+                <div class="row">
+                    <div class="medium-12">
+                        <h1 class="about_taital">What customers says</h1>
+                        <div class="bulit_icon"><img src="images/bulit-icon.png" alt="line_logo"></div>
+                    </div>
+                </div>
+                <div class="client_section_2">
+                    <div class="client_taital_main">
+                        <div class="client_left">
+                            <div class="client_img"><img src="images/client-img1.png" alt="clint_image"></div>
+                        </div>
+                        <div class="client_right">
+                            <h3 class="moark_text">Joy Moark</h3>
+                            <p class="client_text">VCook is a fine Web application that allows you to order food online and options like book restaurants cafes, takeout, and home delivery. The application has made life easy by letting you order whenever and wherever one is
+                                willing to. It is a user-friendly application and it shows the best deals available for you and suitable food according to your choice </p>
+                        </div>
+                    </div>
+                    <div class="client_taital_main">
+                        <div class="client_left">
+                            <div class="client_img"><img src="images/client-img2.png" alt="clint_image"></div>
+                        </div>
+                        <div class="client_right">
+                            <h3 class="moark_text">Mihacal</h3>
+                            <p class="client_text">VCook is an easy go-to the application whenever you are busy or not in a mood to cook, you can always choose VCook , it provides you with different facilities like home delivery, takeout, and pre reservations which helps you
+                                save your time as well as you fulfil your needs, the application is user friendly it is also easy to use as it makes your easy y showing various categories like breakfast, lunch, dinner, and other options and one can choose
+                                according to their suitability</p>
+                        </div>
+                    </div>
+                    <div class="client_taital_main">
+                        <div class="client_left">
+                            <div class="client_img"><img src="images/client-img3.png" alt="clint_image"></div>
+                        </div>
+                        <div class="client_right">
+                            <h3 class="moark_text">Uliya den</h3>
+                            <p class="client_text">What most i like about VCook is OFFERS. They are providing lots of offers to user frequently which very useful for user to make order foods online. Users will excite when they get offers on food.</p>
+                        </div>
+                    </div>
+                    <div class="medium-12">
+                        <div class="load-button text-center">
+                            <button class="btn btn-common" id="loadfeedback" onclick="load_feedbackform()">Give Feedback</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="client_section_2">
-                <div class="client_taital_main">
-                    <div class="client_left">
-                        <div class="client_img"><img src="images/client-img1.png" alt="clint_image"></div>
-                    </div>
-                    <div class="client_right">
-                        <h3 class="moark_text">Joy Moark</h3>
-                        <p class="client_text">VCook is a fine Web application that allows you to order food online and options like book restaurants cafes, takeout, and home delivery. The application has made life easy by letting you order whenever and wherever one is willing
-                            to. It is a user-friendly application and it shows the best deals available for you and suitable food according to your choice </p>
-                    </div>
-                </div>
-                <div class="client_taital_main">
-                    <div class="client_left">
-                        <div class="client_img"><img src="images/client-img2.png" alt="clint_image"></div>
-                    </div>
-                    <div class="client_right">
-                        <h3 class="moark_text">Mihacal</h3>
-                        <p class="client_text">VCook is an easy go-to the application whenever you are busy or not in a mood to cook, you can always choose VCook , it provides you with different facilities like home delivery, takeout, and pre reservations which helps you save
-                            your time as well as you fulfil your needs, the application is user friendly it is also easy to use as it makes your easy y showing various categories like breakfast, lunch, dinner, and other options and one can choose according
-                            to their suitability</p>
-                    </div>
-                </div>
-                <div class="client_taital_main">
-                    <div class="client_left">
-                        <div class="client_img"><img src="images/client-img3.png" alt="clint_image"></div>
-                    </div>
-                    <div class="client_right">
-                        <h3 class="moark_text">Uliya den</h3>
-                        <p class="client_text">What most i like about VCook is OFFERS. They are providing lots of offers to user frequently which very useful for user to make order foods online. Users will excite when they get offers on food.</p>
-                    </div>
+
+            <div class="row" id="feedback_form">
+                <div class="large-12">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="medium-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="medium-12">
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email" id="email" class="form-control" name="Email" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="medium-12">
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Your Phone Number" id="p-number" class="form-control" name="p-number" maxlength="10" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="medium-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Your Message" rows="4" autocomplete="off" required></textarea>
+                                </div>
+                                <div class="submit-button text-center">
+                                    <button class="btn btn-common" id="submit" type="submit" onclick="return validate_feedbackform()">Submit</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -163,6 +203,8 @@
 
     </footer>
     <!-- End Footer -->
+
+    <script src="js/kuldip-main.js"></script>
 
 </body>
 
