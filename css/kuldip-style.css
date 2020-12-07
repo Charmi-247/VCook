@@ -579,6 +579,23 @@
         width: 10px;
     }
     
+    .btn-outline-new-white {
+        color: #fff;
+        background-color: #d65106;
+        background-image: none;
+        border-color: #d65106;
+    }
+    
+    .btn-outline-new-white:hover {
+        color: #ffffff;
+        background-color: #333333;
+        border-color: #333333;
+    }
+    
+    #loadphasebtn {
+        margin: 10px 15px;
+    }
+    
     @media(min-width: 576px) {
         .progress ul li {
             width: 120px;
