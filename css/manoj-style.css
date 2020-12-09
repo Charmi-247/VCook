@@ -1,12 +1,17 @@
 body {
   color: #6a6f8c;
+<<<<<<< HEAD
   font-family:  'Dosis', sans-serif;
+=======
+  font: 600 16px/18px 'Open Sans',sans-serif;
+>>>>>>> bb2b253369906abf95a3696832e6b3d153bc720d
   line-height: 1.7rem;
   
 }
     /*------------------------------------------------------------------
    index
 -------------------------------------------------------------------*/
+<<<<<<< HEAD
 .wrap {
   width: 100%;
   margin: 0 auto;
@@ -124,6 +129,15 @@ padding-left: 0px;
 .slides-inner{
   /* padding-top: 132px; */
   text-align: left;
+=======
+#slides{
+  background: url(../images/slider-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+.slides-inner{
+  padding-top: 132px;
+>>>>>>> bb2b253369906abf95a3696832e6b3d153bc720d
 
 }
 .slides-inner h1{

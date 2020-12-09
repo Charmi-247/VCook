@@ -32,7 +32,6 @@ function validate_contactform() {
 
 
 function load_details() {
-    event.preventDefault();
     let loadmorebtn = document.querySelector('#loadmorebtn');
     loadmorebtn.style.display = 'none';
 
@@ -47,7 +46,7 @@ function load_details() {
 -------------------------------------------------------------------*/
 
 function load_image() {
-    event.preventDefault();
+
     let loadimgbtn = document.querySelector('#loadimgbtn');
     let loadimg = document.getElementsByClassName('loadimg')
 
