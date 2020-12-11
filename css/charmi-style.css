@@ -95,6 +95,8 @@
     }
     
     .inner-pt p {
+        font-weight: 700;
+        line-height: 1.8em;
         font-size: 18px;
         color: #010101;
     }
@@ -182,7 +184,7 @@
     
     .about-section-box {
         padding: 70px 0px;
-        background: #ffffff url(../images/about-bg.jpg) no-repeat bottom center;
+        background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(../images/about-bg.jpg) no-repeat bottom center;
         background-size: cover;
     }
     
@@ -226,8 +228,10 @@
     }
     
     .inner-column p {
+        font-weight: 700;
+        line-height: 1.8em;
         font-size: 18px;
-        color: #222222;
+        color: #000000;
     }
     
     .btn-outline-new-white {

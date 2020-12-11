@@ -1,6 +1,6 @@
 
 /*------------------------------------------------------------------
-  Home
+  Home slider
 -------------------------------------------------------------------*/
 var imageWidth = 1024;
 
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
   function moveLeft() {
     $('#slider2 ul').animate({
       left: +slideWidth
-    }, 200, function() {
+    }, 400, function() {
       $('#slider2 ul li:last-child').prependTo('#slider2 ul');
       $('#slider2 ul').css('left', '');
     });
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
   function moveRight() {
     $('#slider2 ul').animate({
       left: -slideWidth
-    }, 200, function() {
+    }, 400, function() {
       $('#slider2 ul li:first-child').appendTo('#slider2 ul');
       $('#slider2 ul').css('left', '');
     });
@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 
 
 /*------------------------------------------------------------------
-  Profile
+  Profile modal window
 -------------------------------------------------------------------*/
 function orderDetail(ls){
 if(ls=="ham"){
@@ -115,7 +115,7 @@ else if (ls=="las"){
   }
 
 /*------------------------------------------------------------------
-  Reservation
+  Reservation form validate 
 -------------------------------------------------------------------*/
   function formvalidate() {
     var letters = /^[A-Za-z]+$/;
@@ -238,5 +238,21 @@ else if (ls=="las"){
     
 }
 
-
-
+/*------------------------------------------------------------------
+                        Bottom to up
+-------------------------------------------------------------------*/
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+      if ($(this).scrollTop() > 100) {
+          $('#back-to-top').fadeIn();
+      } else {
+          $('#back-to-top').fadeOut();
+      }
+  });
+  $('#back-to-top').click(function () {
+      $("html, body").animate({
+          scrollTop: 0
+      }, 600);
+      return false;
+  });
+});
