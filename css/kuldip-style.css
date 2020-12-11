@@ -491,7 +491,7 @@
         display: none;
     }
     
-    @media (max-width: 767px) and (min-width: 576px) {
+    @media (max-width: 576px) and (min-width: 324px) {
         .client_section {
             background: rgb(208, 125, 107, 0.6);
             background-size: cover;
@@ -522,7 +522,7 @@
         }
     }
     
-    @media (max-width: 576px) and (min-width: 360px) {
+    @media (max-width: 767px) and (min-width: 576px) {
         .client_section {
             background: rgb(208, 125, 107, 0.6);
             background-size: cover;
