@@ -435,7 +435,8 @@ background-size: cover;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 43%; 
+    height:42%;/* Could be more or less, depending on screen size */
   }
   .modal-content h3,.modal-content p{
     color:#6a6f8c !important;
@@ -446,6 +447,7 @@ background-size: cover;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top: -12px;
   }
   
   .close:hover,

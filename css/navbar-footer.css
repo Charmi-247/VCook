@@ -488,3 +488,10 @@ margin: 0 0 20px;
 .about{
     width:26% !important;
 }
+
+@media screen and (max-width: 662px) {
+    .about{
+        width:100% !important;
+    }
+    
+}
